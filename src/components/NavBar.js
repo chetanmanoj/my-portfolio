@@ -1,16 +1,15 @@
 function NavBar(){
     return(
-        <nav className = "NavBar">
-            {/* <h2 class="logo">Port<span>Folio</span></h2> */}
-            <ul className="NavBut">
-                <li><a href>Home</a></li>
-                <li><a href>About</a></li>
-                <li><a href>Skills</a></li>
-                <li><a href>Contact</a></li>
-                
+        <div className="flex justify-end items-center w-full h-[80px] px-4 text-black fixed">
+            <div>
+            <ul className="flex font-kurale text-xl">
+            <li className="px-4 hover:text-NavHover hover:underline">Home</li>
+            <li className="px-4 hover:text-NavHover hover:underline">About</li>
+            <li className="px-4 hover:text-NavHover hover:underline">Skills</li>
+            <li className="px-4 hover:text-NavHover hover:underline">Contact</li>
             </ul>
-            {/* <a href="/documents/resume.pdf" download="resume" class="btn">Download CV</a> */}
-        </nav>
+            </div>
+        </div>
     )
 }
 export default NavBar;
